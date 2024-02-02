@@ -7,7 +7,7 @@
 </head>
 <body>
     @auth
-    <div><a href="/dashboard">Dashboard</a></div>
+    <div><a href="/yourpost">Dashboard</a></div>
     <form action="/logout" method="post">
         @csrf
             <button type="submit">Logout</button>
