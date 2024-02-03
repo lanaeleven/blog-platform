@@ -23,6 +23,7 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/yourpost', function() {return view('yourpost');})->middleware('auth');
+Route::get('/createpost', function() {return view('createpost');})->middleware('auth');
 
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
